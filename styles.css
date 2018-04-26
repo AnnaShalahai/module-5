@@ -1,0 +1,391 @@
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Roboto", "Arial", sans-serif;
+    color: rgb(85, 82, 82);
+    font-size: 14px;
+    line-height: 17px;
+    width: 1600px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.main-header {
+    width: 1600px;
+    height: 165px;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.logo {
+    text-transform: uppercase;
+    font-size: 21px;
+    float: left;
+    margin-left: 30px;
+    margin-right: 565px;
+    text-decoration: none;
+    color: rgb(85, 82, 82);
+}
+
+.logo::first-letter {
+    color: rgb(26, 188, 156);
+}
+
+.main-menu-item {
+    list-style: none;
+    font-size: 10px;
+    margin: 0 auto;
+    padding: 0px;
+    text-transform: uppercase;
+    float: left;
+}
+
+.main-menu-item a {
+    display: inline-block;
+}
+
+.main-menu-item:not(:last-child) {
+    margin-right: 37px;
+}
+
+.main-menu-item a {
+    color: rgb(85, 82, 82);
+    text-decoration: none;
+}
+
+.main-menu-item a:hover {
+    color: rgb(72, 201, 176)
+}
+
+h1 {
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+    padding-top: 100px;
+    padding-bottom: 82px;
+}
+
+h1::after {
+    display: block;
+    width: 165px;
+    height: 7px;
+    content: '';
+    background-color: rgb(78, 198, 171);
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 32px;
+}
+
+.slider {
+    position: relative;
+    width: 1600px;
+    height: 600px;
+    margin: auto;
+    background-size: cover;
+    filter: brightness(0.4);
+}
+
+.slider-ctrl {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 105px;
+    height: 105px;
+    background-color: rgb(85, 162, 143);
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.slider-ctrl-prew {
+    
+    left: 50px;
+    color: rgb(255, 255, 255);
+    font-size: 42px;
+}
+.buttom-prew{
+    position: absolute;
+   left: 50%;
+   top: 50%;
+transform: translate(-50%,-50%);
+}
+.buttom-next{
+    position: absolute;
+   left: 50%;
+   top: 50%;
+transform: translate(-50%,-50%);
+}
+
+
+.slider-ctrl-next {
+    right: 50px;
+    color: rgb(255, 255, 255);
+    font-size: 42px;
+}
+
+.slide {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.slide-image {
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+.text {
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    transform: translateX(50%);
+    text-transform: uppercase;
+    font-size: 43px;
+    line-height: 52px;
+    margin: 0;
+    padding: 32px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.services {
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    transform: translateX(50%);
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0;
+    
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+}
+
+
+
+.main-catalog {
+    width: 1600px;
+    height: 674px;
+    background-color: rgb(233, 240, 253);
+}
+
+.product-img {
+    width: 255px;
+    height: 282px;
+    text-align: center;
+}
+
+.catalog-item {
+    list-style: none;
+    float: left;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+figcaption {
+    background-image: linear-gradient(to right, rgb(50, 50, 50) 80%, rgb(140, 140, 140) 20%);
+}
+
+figcaption {
+    position: relative;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 255px;
+    height: 42px;
+    color: rgb(255, 255, 255);
+}
+
+.product-price {
+    position: absolute;
+    right: 10px;
+    padding: 12px;
+}
+.product-title{
+    position: absolute;
+    
+    padding: 12px;
+}
+
+.main-footer {
+    width: 1600px;
+    height: 90px;
+    margin: 0;
+    background-color: rgb(50, 50, 50);
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    text-align: center;
+    padding: 15px;
+}
+
+.rights {
+    color: rgb(59, 116, 106);
+}
+
+.abra{
+    position: relative;
+}
+.overlay:hover  {
+    opacity: 0.85;
+    cursor: pointer;
+    transition-property: opacity;
+}
+.overlay{
+    position: absolute;
+    width: 235px;
+    height: 260px;
+    text-align: center;
+    background-color: rgb(115, 115, 115);
+    list-style: none;
+    opacity: 0;
+}
+
+.overlay{
+    position: absolute;
+    right: 51%;
+   margin-top: 25px;
+    
+}
+.click:hover{
+    background-color: rgb(26, 188, 156);
+}
+.click {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    position: relative; 
+   }
+   .click-image{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.clock {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    position: relative; 
+   }
+.clock-image{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.messages {
+    position: relative; 
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    
+   
+}
+.messages-image{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+button a:hover {
+    background-color: rgb(26, 188, 156);
+}
+
+.add {
+    cursor: pointer;
+    width: 165px;
+    height: 50px;
+    display: inline-block;
+    background-color: rgb(50, 50, 50);
+    border: 2px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 12px;
+ text-align: center;
+position: relative;
+       
+   }
+   .text-add{
+       position: absolute;
+       top: 50%;
+       transform: translate(-50%,-50%);
+   }
+   .add-image{
+    position: absolute;
+    transform: translate(50%,50%);
+   }
+
+.buttons {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    transform: translateX(-50%);
+    text-align: center;
+
+}
+
+.buttons-add {
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    transform: translateX(-50%);
+text-align: center;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
